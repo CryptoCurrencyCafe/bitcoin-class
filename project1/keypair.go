@@ -16,6 +16,7 @@ import (
 // secp256k1. The key pair returned by this function is two points
 // on this curve. Bitcoin requires that the public and private keys
 // used to generate signatures are generated using this curve.
+
 func generateKeyPair() (*btcec.PublicKey, *btcec.PrivateKey) {
 
 	// Generate a private key, use the curve secpc256k1 and kill the program on
