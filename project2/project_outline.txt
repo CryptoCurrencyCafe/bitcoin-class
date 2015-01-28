@@ -11,14 +11,30 @@ Class Goals:
 - mine blocks
 - demonstrate attacks
 
+wahoocoin
+tjcoin
+rotundacoin
+pizzacoin
+
 
 Project Order
 Step 1: students set up and connect to pointcoin.
-Step 2: require students to interact with cli with provided guide, answer brief questions.
-Step 3: write software to mine pointcoin. (deliverable)
-Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
-Step 5: demonstrate attacks against network as a group (could be in class or an optional lab)
+- make some fairly simple code modifications to switch to pointcoin protocol (maybe change block contents/headers?)
 
+Step 2: require students to interact with cli with provided guide, answer brief questions.
+
+[ in teams, but one node per student ]
+Step 3: write software to mine pointcoin. (deliverable)
+- may work with standard provided miner, but opportunities for significant speed-up if they are more clever ?
+
+
+Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
+- difficulty level will increase, incentive to start early!
+- any transferred coins only count if you have a clear receipt
+- buy pizza with pointcoin (set up my address, send email when it arrives)
+
+Step 5: demonstrate attacks against network as a group (could be in class or an optional lab)
+- mining pools, witholding attack?
 
 Needed:
 (1) pointcoind
