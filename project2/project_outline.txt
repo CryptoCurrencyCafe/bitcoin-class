@@ -1,0 +1,33 @@
+    ____        _       __  ______      _     
+   / __ \____  (_)___  / /_/ ____/___  (_)___ 
+  / /_/ / __ \/ / __ \/ __/ /   / __ \/ / __ \
+ / ____/ /_/ / / / / / /_/ /___/ /_/ / / / / /
+/_/    \____/_/_/ /_/\__/\____/\____/_/_/ /_/ 
+
+Class Goals:
+- establish pointcoin
+- interact with bitcoin-cli
+- learn / write / mining software
+- mine blocks
+- demonstrate attacks
+
+
+Project Order
+Step 1: students set up and connect to pointcoin.
+Step 2: require students to interact with cli with provided guide, answer brief questions.
+Step 3: write software to mine pointcoin. (deliverable)
+Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
+Step 5: demonstrate attacks against network as a group (could be in class or an optional lab)
+
+
+Needed:
+(1) pointcoind
+    (a) easy way of changing network parameters
+(2) reference mining code
+(3) block explorer
+(4) determine DNS plan
+(5) documentation
+    (a) set up of pointcoind
+    (b) guide/questions for pointcoin-cli interaction
+    (c) advice on how to mine
+(6) determine attacks to demonstrate
