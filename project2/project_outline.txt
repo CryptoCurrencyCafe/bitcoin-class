@@ -12,7 +12,7 @@ Class Goals:
 - demonstrate attacks
 
 wahoocoin
-tjcoin
+tjcoin  (see Jefferson's coin plan: http://avalon.law.yale.edu/18th_century/jeffplan.asp)
 rotundacoin
 pizzacoin
 
