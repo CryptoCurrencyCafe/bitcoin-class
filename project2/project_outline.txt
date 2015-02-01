@@ -39,6 +39,7 @@ Step 5: demonstrate attacks against network as a group (could be in class or an 
 Needed:
 (1) pointcoind
     (a) easy way of changing network parameters
+    (b) documented changes
 (2) reference mining code
 (3) block explorer
 (4) determine DNS plan
@@ -47,3 +48,13 @@ Needed:
     (b) guide/questions for pointcoin-cli interaction
     (c) advice on how to mine
 (6) determine attacks to demonstrate
+
+In progress:
+(1) working on changing net params
+    x Change pointcoin address to have P prefix
+
+(3) On robinhood there is a Centos box at 105 with golang and pointcoind installed
+
+Done: 
+(1) Fork btcsuite libaries
+
