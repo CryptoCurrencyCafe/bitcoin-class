@@ -1,0 +1,36 @@
+
+
+In btcnet/params params.go: 
+```
+MainNetParams = {
+    Default net port: 22228
+
+    Simnet params are used for difficulty and genesis params.
+
+    subsidy halving interval: 400000
+
+    PubKeyHashId = 56 
+}
+```
+
+
+In btcwire/protocol.go:L90
+```
+BitcoinNet = 0xb01dface
+```
+
+In pointcoind/blockchain
+
+In difficulty.go:L20-L:40
+
+```
+targetTimeSpan = 1 hour
+targetSpacing = 2 minutes
+```
+
+In validate.go:L50
+
+```
+baseSubsidy = 1 coin
+CoinBaseMaturity = 5 blocks
+```
