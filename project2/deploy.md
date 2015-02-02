@@ -30,7 +30,7 @@ As a *node*:
 
 As a *miner*:
 ```bash
-> pointcoind -d debug -a "54.84.178.186" -generate -miningaddr="Pdhgs7KhtwwNkLy6pRuCKpChWzbHn4Bkv2"
+> pointcoind -d debug -a "54.84.178.186" --generate --miningaddr="Pdhgs7KhtwwNkLy6pRuCKpChWzbHn4Bkv2"
 ```
 
 Note that the mining address is a throwaway. Nobody has the key to it. :)
