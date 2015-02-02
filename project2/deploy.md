@@ -3,11 +3,14 @@ Instructions for instructors/TAs.
 ================================
 
 To set up a node or a mining server you must:
+###Install Dependencies
 
-###Install go
+You are going to need git and mercurial.
+
+####Install go
 It's convient to add $GOPATH/bin to your systems PATH
 
-###Install ntp 
+####Install ntp 
 This is reccomended, for maximum luck use ntpdate to force your clock to use what ntp reports.
 
 
