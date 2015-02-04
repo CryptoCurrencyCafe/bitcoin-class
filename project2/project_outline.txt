@@ -11,10 +11,12 @@ Class Goals:
 - mine blocks
 - demonstrate attacks
 
+
 wahoocoin
 tjcoin  (see Jefferson's coin plan: http://avalon.law.yale.edu/18th_century/jeffplan.asp)
 rotundacoin
 pizzacoin
+Note: name discussion tabled, (it requires a big move for it all to work)
 
 
 Project Order
@@ -25,8 +27,9 @@ Step 2: require students to interact with cli with provided guide, answer brief 
 
 [ in teams, but one node per student ]
 Step 3: write software to mine pointcoin. (deliverable)
-- may work with standard provided miner, but opportunities for significant speed-up if they are more clever ?
-
+- Cripple standard miner so that it mines at 1/4 or 1/8 actual speed.
+- Provide a testing harness for mining their own blocks.
+- Let students connect their improved miner to the pontcoind machine.
 
 Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
 - difficulty level will increase, incentive to start early!
@@ -41,20 +44,15 @@ Needed:
     (a) easy way of changing network parameters
     (b) documented changes
 (2) reference mining code
-(3) block explorer
+(3) block explorer -- try to use blocksafari
 (4) determine DNS plan
 (5) documentation
     (a) set up of pointcoind
     (b) guide/questions for pointcoin-cli interaction
     (c) advice on how to mine
 (6) determine attacks to demonstrate
+(7) set up pizza ordering site and pointcoin news site.
 
-In progress:
-(1) working on changing net params
-    x Change pointcoin address to have P prefix
-
+Notes:
+(3) switch pcbootstrap from small to micro
 (3) On robinhood there is a Centos box at 105 with golang and pointcoind installed
-
-Done: 
-(1) Fork btcsuite libaries
-
