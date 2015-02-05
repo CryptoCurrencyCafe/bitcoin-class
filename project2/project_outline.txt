@@ -11,18 +11,35 @@ Class Goals:
 - mine blocks
 - demonstrate attacks
 
+wahoocoin
+tjcoin  (see Jefferson's coin plan: http://avalon.law.yale.edu/18th_century/jeffplan.asp)
+rotundacoin
+pizzacoin
+
 
 Project Order
 Step 1: students set up and connect to pointcoin.
-Step 2: require students to interact with cli with provided guide, answer brief questions.
-Step 3: write software to mine pointcoin. (deliverable)
-Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
-Step 5: demonstrate attacks against network as a group (could be in class or an optional lab)
+- make some fairly simple code modifications to switch to pointcoin protocol (maybe change block contents/headers?)
 
+Step 2: require students to interact with cli with provided guide, answer brief questions.
+
+[ in teams, but one node per student ]
+Step 3: write software to mine pointcoin. (deliverable)
+- may work with standard provided miner, but opportunities for significant speed-up if they are more clever ?
+
+
+Step 4: mine 100 coin by due date to recieve 100 on the assignment. (deliverable)
+- difficulty level will increase, incentive to start early!
+- any transferred coins only count if you have a clear receipt
+- buy pizza with pointcoin (set up my address, send email when it arrives)
+
+Step 5: demonstrate attacks against network as a group (could be in class or an optional lab)
+- mining pools, witholding attack?
 
 Needed:
 (1) pointcoind
     (a) easy way of changing network parameters
+    (b) documented changes
 (2) reference mining code
 (3) block explorer
 (4) determine DNS plan
@@ -31,3 +48,13 @@ Needed:
     (b) guide/questions for pointcoin-cli interaction
     (c) advice on how to mine
 (6) determine attacks to demonstrate
+
+In progress:
+(1) working on changing net params
+    x Change pointcoin address to have P prefix
+
+(3) On robinhood there is a Centos box at 105 with golang and pointcoind installed
+
+Done: 
+(1) Fork btcsuite libaries
+
