@@ -1,0 +1,116 @@
+Command for golang to clone pointcoind and all dependencies:
+-u | update the repository
+-v | verbose
+go get -u -v github.com/PointCoin/pointcoind/...
+
+Command to run pointcoind.
+-d debug | enable debug mode
+-a "54.84.178.186" | connect to node with ip address
+-u "[your rpc username] | username to interact with pointcoind over RPC
+-p "[your rpc password] | password to interact with pointcoind over RPC
+pointcoind -d debug -a "54.84.178.186" -u "[rpc username]" -P "[rpc password]"
+
+At this point pointcoind should have made contact with the network and should
+start downloading the pointcoin block chain from peers.  Download will take a 
+few minutes.  You can tell the block chain has fully synced by viewing the 
+timestamp of the lastest block logged in stdout.
+
+Acquire a new shell*.  We will interact with the basic commands of the
+pointcoind node using the package "pointctl".  Everytime a function is called,
+pointctl calls the RPC functions of pointcoind, thus, we must include the
+RPC username and RPC password defined previously.
+
+There are two help flags under pointctl.  The first is the general help:
+pointctl -h
+
+This will provide all commands and parameters of pointctl.  However, only a
+subset of these are available to us at the moment as btcsuite seperates
+the functionality of their implemenation (pointcoin is a fork of btcsuite)
+and we have only started the core node functionality (pointcoind).  Later, we 
+will enable wallet functionality (and you will build your own mining software).
+
+To see enabled pointcoin RPC commands, run the command:
+pointctl -u "[rpc username]" -P "[rpc password]" help
+
+You should get a list of available commands which looks similar to below:
+
+addnode
+getblockhash
+getgenerate
+decoderawtransaction
+getblockchaininfo
+ping
+sendrawtransaction
+validateaddress
+verifychain
+getblocktemplate
+getchaintips
+getdifficulty
+getrawmempool
+getwork
+createrawtransaction
+estimatepriority
+getaddednodeinfo
+getblockcount
+gethashespersec
+getmininginfo
+getnetworkinfo
+getpeerinfo
+decodescript
+getblock
+setgenerate
+estimatefee
+getnettotals
+getrawtransaction
+gettxout
+stop
+debuglevel
+getbestblock
+getbestblockhash
+getconnectioncount
+getnetworkhashps
+help
+submitblock
+getcurrentnet
+getinfo
+verifymessage
+
+
+Let's explore some of this functionality!
+
+View the hash of the pointcoin genesis block:
+pointctl -u "[user]" -P "[pass]" getblockhash 0
+
+Use the output to view the contents of the genesis block:
+pointctl -u "[user]" -P "[pass]" getblock [hash from above output]
+
+View the raw hex value of the coinbase transaction within the genesis block:
+pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash from block output]
+
+Decode the raw hex and view contents of transaction:
+pointctl -u "[user]" -P "[pass]" decoderawtransaction [hex output from getrawtransaction]
+
+Find the height of the pointcoin block chain:
+pointctl -u "[user]" -P "[pass]" getblockcount
+
+Get the hash of the latest block:
+pointctl -u "[user]" -P "[pass]" getbestblockhash
+
+View all unconfirmed transactions (this will likely  be empty):
+pointctl -u "[user]" -P "[pass]" getrawmempool 
+ 
+Now view some network information. The number of nodes you are conencted to:
+pointctl -u "[user]" -P "[pass]" getconnectioncount
+
+Get information about your network peers:
+pointctl -u "[user]" -P "[pass]" getpeerinfo 
+
+Get the total mining power of the network (in SHA256 hashes per second):
+pointctl -u "[user]" -P "[pass]" getnetworkhashps 
+
+Get some information about the node running on your machine:
+pointctl -u "[user]" -P "[pass]" getinfo
+
+
+Cool beans! You have installed, synced, and interacted with cryptocurrency 
+full node. This, for a long while, was the only way to interact with Bitcoin.
