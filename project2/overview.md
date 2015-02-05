@@ -25,13 +25,13 @@ pointctl -u "[user]" -P "[pass]" getblock [hash from above output]
 
 ####View the raw hex value of the coinbase transaction within the genesis block:
 ```
-pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash from block output
-]```
+pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash from block output]
+```
 
 ####Decode the raw hex and view contents of transaction:
 ```
-pointctl -u "[user]" -P "[pass]" decoderawtransaction [hex output from getrawtransaction
-]```
+pointctl -u "[user]" -P "[pass]" decoderawtransaction [hex output from getrawtransaction]
+```
 
 ####Find the height of the pointcoin block chain:
 ```
