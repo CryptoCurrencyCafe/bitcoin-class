@@ -14,7 +14,7 @@ pointcoind -d debug -a "54.84.178.186" -u "[rpc username]" -P "[rpc password]"
 
 
 |command                                                            |description
-|====---------------------------------------------------------------|-----------
+|-------------------------------------------------------------------|-----------
 |pointctl -u "[user]" -P "[pass]" getblockhash 0                    |View the hash of the pointcoin genesis block
 |pointctl -u "[user]" -P "[pass]" getblock [hash from above output] |Use the output to view the contents of the genesis block
 
