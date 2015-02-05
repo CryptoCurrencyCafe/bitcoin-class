@@ -80,12 +80,14 @@ Use the go get subcommand to install the tools. Do it in two commands.
 > go get -u github.com/PointCoin/wallet/...
 ```
 
-We have written an overview of what the tools do (here)[overview.md]. Read that.
-
 Then verify that the install worked by trying to run pointcoin!
 
 ```
 > pointcoind --version
 ```
+
+### Step 6/5 Interact with pointcoin
+We have written an overview of what the tools do (here)[overview.md]. Read that.
+
 
 
