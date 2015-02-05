@@ -14,34 +14,56 @@ pointcoind -d debug -a "54.84.178.186" -u "[rpc username]" -P "[rpc password]"
 
 
 ####View the hash of the pointcoin genesis block:
-```pointctl -u "[user]" -P "[pass]" getblockhash 0```
+```
+pointctl -u "[user]" -P "[pass]" getblockhash 0
+```
 
 ####Use the output to view the contents of the genesis block:
-```pointctl -u "[user]" -P "[pass]" getblock [hash from above output]```
+```
+pointctl -u "[user]" -P "[pass]" getblock [hash from above output]
+```
 
 ####View the raw hex value of the coinbase transaction within the genesis block:
-```pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash from block output]```
+```
+pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash from block output
+]```
 
 ####Decode the raw hex and view contents of transaction:
-```pointctl -u "[user]" -P "[pass]" decoderawtransaction [hex output from getrawtransaction]```
+```
+pointctl -u "[user]" -P "[pass]" decoderawtransaction [hex output from getrawtransaction
+]```
 
 ####Find the height of the pointcoin block chain:
-```pointctl -u "[user]" -P "[pass]" getblockcount```
+```
+pointctl -u "[user]" -P "[pass]" getblockcount
+```
 
 ####Get the hash of the latest block:
-```pointctl -u "[user]" -P "[pass]" getbestblockhash```
+```
+pointctl -u "[user]" -P "[pass]" getbestblockhash
+```
 
 ####View all unconfirmed transactions (this will likely  be empty):
-```pointctl -u "[user]" -P "[pass]" getrawmempool```
+```
+pointctl -u "[user]" -P "[pass]" getrawmempool
+```
  
 ####Now view some network information. The number of nodes you are conencted to:
-```pointctl -u "[user]" -P "[pass]" getconnectioncount```
+```
+pointctl -u "[user]" -P "[pass]" getconnectioncount
+```
 
 ####Get information about your network peers:
-```pointctl -u "[user]" -P "[pass]" getpeerinfo```
+```
+pointctl -u "[user]" -P "[pass]" getpeerinfo
+```
 
 ####Get the total mining power of the network (in SHA256 hashes per second):
-```pointctl -u "[user]" -P "[pass]" getnetworkhashps```
+```
+pointctl -u "[user]" -P "[pass]" getnetworkhashps
+```
 
 ####Get some information about the node running on your machine:
-```pointctl -u "[user]" -P "[pass]" getinfo```
+```
+pointctl -u "[user]" -P "[pass]" getinfo
+```
