@@ -41,7 +41,7 @@ on your local machine.
 ### Step 1/5 (Register an AWS account)
 
 Create an account on aws.amazon.com using your school email. If you already have one and 
-your free tier has expired use that. 
+your free tier hasn't expired use that. If it has expired, come talk to us.
 
 
 ### Step 2/5 Configure and Launch an Instance
