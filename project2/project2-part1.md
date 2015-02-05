@@ -65,7 +65,9 @@ Verify that your server is what you think it is, by running `uname -a`
 
 ### Step 4/5 Install Go
 
-Just like last time!
+Just like last time!  Note: do not use apt-get or any other packaging tool!
+We repeat, do not use apt-get to install golang!
+Follow these instructions: https://golang.org/doc/install
 
 
 ### Step 5/5 Download, build and run PointCoin tools
