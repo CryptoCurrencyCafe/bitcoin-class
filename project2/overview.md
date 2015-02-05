@@ -1,5 +1,5 @@
 This overview assumes you have successfully completed steps outlined in 
-(project 2, part 1 initial setup)[project2-part1.md].
+[project 2, part 1 initial setup](project2-part1.md).
 
 ## Run the PointCoin daemon
 Command:

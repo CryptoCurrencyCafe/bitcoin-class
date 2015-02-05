@@ -26,7 +26,7 @@ machine to mine.
 
 # More Setup!
 For project 2 you are going to need to set up a free-tier micro instance using Amazon's 
-(cloud)[http://aws.amazon.com/]. The goal is for everybody to have a server connected 
+[cloud](http://aws.amazon.com/). The goal is for everybody to have a server connected 
 to the classes own network. This way when you go to write your mining software in part 2
 nobody has a computing speed advantage over anybody else. This gives everybody a fair
 shot at mining blocks using software that they have written. 
@@ -87,7 +87,7 @@ Then verify that the install worked by trying to run pointcoin!
 ```
 
 ### Step 6/5 Interact with pointcoin
-We have written an overview of what the tools do (here)[overview.md]. Read that.
+We have written an overview of what the tools do [here](overview.md). Read that.
 
 
 
