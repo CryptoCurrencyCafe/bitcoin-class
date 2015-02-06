@@ -8,15 +8,13 @@ implemenation into seperate packages based upon their function.  You can read mo
 [here](https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon/).  For this class there are three
 packages you need to be familiar with:
 
-+ pointcoind
-+ wallet
-+ pointctl
++ `pointcoind`
++ `wallet`
++ `pointctl`
 
-pointcoind contains the fundamental functions of a pointcoin [full node](https://en.bitcoin.it/wiki/Full_node).
-
-wallet contains the functions to interface with your pointcoin private keys.
-
-pointctl is the command line interface to interact with the RPC functions within pointcoind and wallet.
+`pointcoind` contains the fundamental functions of a pointcoin [full node](https://en.bitcoin.it/wiki/Full_node).
+`wallet` contains the functions to interface with your pointcoin private keys.
+`pointctl` is the command line interface to interact with the RPC functions within pointcoind and wallet.
 
 
 ## pointcoind
