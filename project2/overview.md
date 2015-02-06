@@ -21,7 +21,7 @@ For now there are three packages you need to be familiar with:
 2. We will daemonize `pointcoind`
 3. We will configure `wallet`
 4. We will daemonize `wallet`
-5. We will configure `pointctl` and play around with its' functions
+5. We will configure `pointctl` then play around with its' functions
 
 
 ## pointcoind
