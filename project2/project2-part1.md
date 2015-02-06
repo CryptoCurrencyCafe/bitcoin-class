@@ -26,7 +26,7 @@ machine to mine.
 
 # More Setup!
 For project 2 you are going to need to set up a free-tier micro instance using Amazon's 
-(cloud)[http://aws.amazon.com/]. The goal is for everybody to have a server connected 
+[cloud](http://aws.amazon.com/). The goal is for everybody to have a server connected 
 to the classes own network. This way when you go to write your mining software in part 2
 nobody has a computing speed advantage over anybody else. This gives everybody a fair
 shot at mining blocks using software that they have written. 
@@ -47,8 +47,8 @@ an ubuntu VM on a windows machine use the terminal there to run commands mention
 
 ### Step 1/5 (Register an AWS account)
 
-Create an account on (Amazon's Web Services)[https://aws.amazon.com] using your school email. If you already have one and 
-your free tier usage plan hasn't expired use that. 
+Create an account on aws.amazon.com using your school email. If you already have one and 
+your free tier hasn't expired use that. If it has expired, come talk to us.
 
 Amazon will ask you to provide billing information during account setup. 
 If you abide by the free tier usage guildlines
@@ -89,8 +89,7 @@ Verify that your server is what you think it is, by running `uname -a`
 
 ### Step 4/5 Install Go
 
-You should be familar with this step from project 1. If you are unfamiliar with unix-like systems
-there are a few gotchas that we noticed last time the class tried this.
+Just like last time! Here are some gotchas people came to us with from last time:
 
 ##### Don't use apt-get to install go
 It installs an old version which is incompatible with the libraries we are using.
@@ -98,7 +97,8 @@ It installs an old version which is incompatible with the libraries we are using
 ##### Set the $GOPATH Environment Variable
 Make sure you add the line `export GOPATH=/path/to/empty/dir` to your `~/.bashrc` file
 
-If you did everything right the command `go version` should look like this:
+If you did everything right the command `go version` should look like this. Notice the 
+version number (1.4).
 
 ```bash
 ubuntu@ip-172-30-0-201:~$ go version
@@ -107,23 +107,30 @@ go version go1.4.1 linux/amd64
 
 ### Step 5/5 Download, Build and Run PointCoin tools
 
-The final step is to get all of the command line tools that connect you to PointCoin.
-Use the go get subcommand to install the tools. Do it in two commands.
+The final step is to get all of the command line tools that let you interact with PointCoin
+We have written up an overview of what the three main tools do here. 
+Read that please!
+
+
+Once you understand what you are installing, use the go get subcommand to install the tools. 
+Do it in two commands. The first one installs and builds `pointctl` and `pointcoind`.
+The second installs `wallet`
 
 ```
 > go get -u github.com/PointCoin/pointcoind/...
 > go get -u github.com/PointCoin/wallet/...
 ```
 
-We have written an overview of what the tools do (here)[overview.md]. Read that.
-
 Then verify that the install worked by trying to run pointcoin!
 
 ```
-> pointcoind --version
+ubuntu@ip-172-30-0-201:~$ pointcoind --version
+pointcoind version 0.1.0-student-edition!
 ```
 
-You should also put these tools on your local machine if you are more comfortable
-writing code locally.
+Note: You should also put these tools on your local machine if you are more comfortable
+writing code locally for part 2.
 
+### Step 6/5 Interact with pointcoin
+We have written an overview of what the tools do [here](overview.md). Read that.
 
