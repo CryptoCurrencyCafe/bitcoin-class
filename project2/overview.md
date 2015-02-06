@@ -3,7 +3,7 @@ project 2, part 1, [initial setup](project2-part1.md).
 
 ### Run the PointCoin daemon
 ```
-pointcoind -d debug -a "54.84.178.186" -u "[rpc username]" -P "[rpc password]"
+pointcoind -d debug -a "54.84.178.186"
 ```
 |flag                       | description
 |---------------------------|------------
@@ -13,18 +13,18 @@ pointcoind -d debug -a "54.84.178.186" -u "[rpc username]" -P "[rpc password]"
 |-p "*[your rpc password]*" | password to interact with pointcoind over RPC
 
 
-|command                                                              |description
-|:--------------------------------------------------------------------|:----------
-|`pointctl -u "[user]" -P "[pass]" getblockhash 0`                    |Retrieves the hash of the pointcoin genesis block
-|`pointctl -u "[user]" -P "[pass]" getblock [block 0 hash]`           |Retrieves contents of the genesis block
-|`pointctl -u "[user]" -P "[pass]" getrawtransaction [tx hash]`       |Dump raw hex of some transaction
-|`pointctl -u "[user]" -P "[pass]" decoderawtransaction [tx raw hex]` |Decodes raw hex into readable format
-|`pointctl -u "[user]" -P "[pass]" getblockcount`                     |Find the pointcoin block chain height
-|`pointctl -u "[user]" -P "[pass]" getbestblockhash`                  |Get the hash of the highest block in chain
-|`pointctl -u "[user]" -P "[pass]" getrawmempool`                     |View all unconfirmed transactions (this will likely be empty)
-|`pointctl -u "[user]" -P "[pass]" getconnectioncount`                |View number of peers your node is connected to
-|`pointctl -u "[user]" -P "[pass]" getpeerinfo`                       |View information about those peers
-|`pointctl -u "[user]" -P "[pass]" getnetworkhashps`                  |Find the network hash rate (sha256 hashes / second)
-|`pointctl -u "[user]" -P "[pass]" getinfo`                           |Information about the node running on your machine
+|command                                      |description
+|:--------------------------------------------|:----------
+|`pointctl getblockhash 0`                    |Retrieves the hash of the pointcoin genesis block
+|`pointctl getblock [block 0 hash]`           |Retrieves contents of the genesis block
+|`pointctl getrawtransaction [tx hash]`       |Dump raw hex of some transaction
+|`pointctl decoderawtransaction [tx raw hex]` |Decodes raw hex into readable format
+|`pointctl getblockcount`                     |Find the pointcoin block chain height
+|`pointctl getbestblockhash`                  |Get the hash of the highest block in chain
+|`pointctl getrawmempool`                     |All unconfirmed transactions (this will likely be empty)
+|`pointctl getconnectioncount`                |View number of peers your node is connected to
+|`pointctl getpeerinfo`                       |View information about those peers
+|`pointctl getnetworkhashps`                  |The network hash rate (sha256 hashes / second)
+|`pointctl getinfo`                           |Information about the local node
 
 
