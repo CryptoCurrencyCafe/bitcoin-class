@@ -3,18 +3,20 @@ Project 2, Part 1, [initial setup](project2-part1.md).
 
 ##Overview
 
-The [developers](https://conformal.com/) of btcsuite divided their full node 
-implemenation into seperate packages based upon their function.  You can read more about that decision
-[here](https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon/).  For this class there are three
-packages you need to be familiar with:
+The [developers](https://conformal.com/) of btcsuite divided their full node implemenation into 
+seperate packages based upon their function for efficiency, safety, and intuitive development.  You 
+can read more about that decision [here](https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon/).
+For now there are three packages you need to be familiar with:
 
 + `pointcoind`
 + `wallet`
 + `pointctl`
 
-`pointcoind` contains the fundamental functions of a pointcoin [full node](https://en.bitcoin.it/wiki/Full_node).
-`wallet` contains the functions to interface with your pointcoin private keys.
+`pointcoind` contains the fundamental functions of a pointcoin [full node](https://en.bitcoin.it/wiki/Full_node).  
+`wallet` contains the functions to interface with your pointcoin private keys.  
 `pointctl` is the command line interface to interact with the RPC functions within pointcoind and wallet.
+
+
 
 
 ## pointcoind
