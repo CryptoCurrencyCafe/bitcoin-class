@@ -17,7 +17,7 @@ For now there are three packages you need to be familiar with:
 `pointctl` is the command line interface to interact with the RPC functions within pointcoind and wallet.
 
 ###Overview of this Overview
-1. We will configure `pointcoind` and download the block chain
+1. We will configure `pointcoind` then download the block chain
 2. We will daemonize `pointcoind`
 3. We will configure `wallet`
 4. We will daemonize `wallet`
@@ -25,6 +25,11 @@ For now there are three packages you need to be familiar with:
 
 
 ## pointcoind
+### Configure your pointcoin.conf file
+Create a file in your home directory titled `nick_smells.conf`.  Within we will define the RPC username and
+the RPC password pointcoind will use ([here](https://github.com/PointCoin/pointcoind/blob/master/sample-btcd.conf) is an example conf file).
+
+
 ### Run the pointcoin daemon
 ```
 pointcoind -d debug -a "54.84.178.186"
