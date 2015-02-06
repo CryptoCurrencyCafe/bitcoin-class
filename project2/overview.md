@@ -16,7 +16,12 @@ For now there are three packages you need to be familiar with:
 `wallet` contains the functions to interface with your pointcoin private keys.  
 `pointctl` is the command line interface to interact with the RPC functions within pointcoind and wallet.
 
-
+###Overview of this Overview
+1. We will configure `pointcoind` and download the block chain
+2. We will daemonize `pointcoind`
+3. We will configure `wallet`
+4. We will daemonize `wallet`
+5. We will configure `pointctl` and play around with its' functions
 
 
 ## pointcoind
